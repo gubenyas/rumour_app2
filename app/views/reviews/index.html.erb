@@ -1,0 +1,9 @@
+<%= form_tag(controller: "reviews", action: "search") do %>
+  <%= label_tag(:p_id, "Product id:") %>
+  <%= text_field_tag(:p_id) %>
+  </br>
+  <%= label_tag(:p_words, "Related words:") %>
+  <%= text_area_tag(:p_words) %>
+
+  <%= submit_tag("Search") %>
+<% end %>
